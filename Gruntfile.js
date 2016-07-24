@@ -95,7 +95,7 @@ module.exports = function (grunt) {
           preserveComments: false,
           mangle: true,
           compress: {
-            drop_console: true
+            // drop_console: true
           }
         },
         files: [{
