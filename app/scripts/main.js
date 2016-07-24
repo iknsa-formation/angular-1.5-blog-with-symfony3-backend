@@ -14,8 +14,18 @@ blog.config(['$routeProvider', function($routeProvider) {
     ;
 }]);
 
-blog.controller('BlogListingCtrl', ['$scope', function($scope) {
+blog.controller('BlogListingCtrl', ['$scope', '$http', function($scope, $http) {
+    $http({
+        method: 'GET',
+        url: 'http://symfony.dev/api/post'
+    }).then(function successCallback(response) {
+        $scope.posts = response.data;
+        console.log($scope.posts);
+    }, function errorCallback(response) {
+        console.log(response);
+    });
 }]);
 
 blog.controller('BlogShowCtrl', ['$scope', function($scope) {
+    $scope = '';
 }]);
