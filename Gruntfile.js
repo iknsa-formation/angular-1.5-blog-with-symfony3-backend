@@ -90,8 +90,8 @@ module.exports = function (grunt) {
     uglify: {
       dist: {
         options: {
-          banner: '/* <%= config.pkg.name %> - Version: <%= config.pkg.version %> - ' +
-            '<%= grunt.template.today("yyyy-mm-dd") %> */',
+          banner: '/**\n * <%= config.pkg.name %> - Version: <%= config.pkg.version %>\n * \n' +
+            ' * <%= grunt.template.today("yyyy-mm-dd") %>\n *\n * @author <%= config.pkg.author %>\n */\n\n',
           preserveComments: false,
           mangle: true,
           compress: {
