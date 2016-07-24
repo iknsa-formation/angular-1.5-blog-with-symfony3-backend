@@ -26,6 +26,12 @@ blog.controller('BlogListingCtrl', ['$scope', '$http', function($scope, $http) {
     });
 }]);
 
-blog.controller('BlogShowCtrl', ['$scope', function($scope) {
-    $scope = '';
+blog.controller('BlogShowCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    $http({
+        method: 'GET',
+        url: 'http://symfony.dev/api/post/' + $routeParams.id + '/show'
+    }).then(function successCallback(response) {
+        $scope.post = response.data.post[0];
+        $scope.comments = response.data.comments;
+    });
 }]);
