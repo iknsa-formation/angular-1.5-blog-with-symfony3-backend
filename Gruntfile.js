@@ -75,6 +75,7 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
+            './assets/',
             './templates/',
             './styles/',
             './scripts/',
@@ -142,6 +143,7 @@ module.exports = function (grunt) {
             'img/{,*/}*.{webp,jpg,png,gif,svg}',    // Images.
             'fonts/{,*/}*.*',                       // Fonts.
             'translate/{,*/}*.json',                // translations.
+            'assets/**/*',                          // default assets.
           ]
         }]
       },
