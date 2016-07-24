@@ -9,6 +9,7 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "ks-normalize": "^0.0.x"
+    "angular-route": "^1.5.8",
+    "angular-sanitize": "^1.5.8"
   }
 }
