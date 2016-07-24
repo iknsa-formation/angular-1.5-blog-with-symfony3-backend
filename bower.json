@@ -1,0 +1,14 @@
+{
+  "name": "blog-angular-symfony",
+  "version": "0.0.0",
+  "authors": [
+    "Khalid Sookia <khalidsookia@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "ks-normalize": "^0.0.x"
+  }
+}
